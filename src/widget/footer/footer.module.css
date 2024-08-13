@@ -3,7 +3,7 @@
 }
 
 .footer_text p {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Varela Round", sans-serif !important;
   font-size: 28px;
   color: gray;
   font-weight: 300;
