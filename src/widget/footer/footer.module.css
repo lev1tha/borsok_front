@@ -1,0 +1,10 @@
+.footer_text {
+  text-align: center;
+}
+
+.footer_text p {
+  font-family: "Varela Round", sans-serif;
+  font-size: 28px;
+  color: gray;
+  font-weight: 300;
+}

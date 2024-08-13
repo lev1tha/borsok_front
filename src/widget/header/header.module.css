@@ -1,0 +1,39 @@
+.header_container {
+  margin-top: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 250px;
+}
+
+.navigation nav {
+  flex: 1;
+  display: flex;
+  gap: 18px;
+}
+
+.navigation span {
+  color: black;
+  font-size: clamp(18px, 2vw + 1rem, 24px);
+}
+
+.card_inner {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.card svg {
+  color: black;
+}
+
+.card span {
+  color: black;
+  font-size: clamp(18px, 2vw + 1rem, 24px);
+}
