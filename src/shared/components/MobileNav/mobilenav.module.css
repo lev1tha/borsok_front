@@ -1,0 +1,13 @@
+.container_mobilenav {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-left: 44px;
+
+  width: 100px;
+  text-align: center;
+}
+
+.mobile_value {
+  border-bottom: 1px solid gray;
+}
