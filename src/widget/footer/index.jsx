@@ -4,7 +4,7 @@ import style from "./footer.module.css"
 const Footer = () => {
   return (
     <div className={style.footer_text}>
-      <p>ElMark Digital</p>
+      <p>ElDev Digital</p>
     </div>
   );
 };

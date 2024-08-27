@@ -1,0 +1,82 @@
+.container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigationBlock {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  text-align: start;
+
+  /* Анимация появления */
+  opacity: 0;
+  transform: translateX(
+    -100%
+  ); /* Начальная позиция - за пределами экрана слева */
+  animation: slideIn 0.8s ease-out forwards; /* Запуск анимации */
+}
+
+.navigationBlock p {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease; /* Плавная смена цвета и трансформация */
+}
+
+.navigationBlock p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #000; /* Цвет язычка */
+  transform: scaleX(0); /* Изначально скрыт */
+  transform-origin: left;
+  transition: transform 0.3s ease; /* Плавное появление */
+}
+
+.navigationBlock p:hover {
+  font-weight: 600; /* Цвет при наведении */
+  transform: translateX(5px); /* Сдвиг текста вправо при наведении */
+}
+
+.navigationBlock p:hover::after {
+  transform: scaleX(1); /* Появление язычка при наведении */
+}
+
+.logotype {
+  opacity: 0;
+  transform: scale(0) rotate(0deg); /* Начальная позиция: уменьшен и не вращается */
+  animation: logoAnimation 1s ease-out forwards; /* Анимация */
+}
+
+/* Анимация появления .navigationBlock */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Анимация для .logotype */
+@keyframes logoAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg); /* Невидим, уменьшен, не вращается */
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2) rotate(180deg); /* Наполовину видим, увеличен, наполовину вращается */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(360deg); /* Полностью видим, нормальный размер, полный оборот */
+  }
+}

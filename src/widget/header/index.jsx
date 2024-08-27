@@ -3,16 +3,17 @@ import style from "./header.module.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import Logo from "../../assets/svg/borsok-logo.svg";
 
 const Header = () => {
   return (
     <div className={style.header_container}>
       <div className={style.logotype}>
-        <img src="" alt="LogoType" />
+        <img src={Logo} alt="LogoType" />
       </div>
       <div className={style.navigation}>
         <nav>
-          <Link to={"/акций"}>
+          <Link to={"/"}>
             <span>Меню</span>
           </Link>
           <Link to={"/акций"}>
