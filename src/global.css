@@ -12,3 +12,9 @@
 
   font-family: "Nunito", sans-serif;
 }
+
+::-webkit-scrollbar {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
