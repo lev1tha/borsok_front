@@ -74,7 +74,10 @@ export default function AuthPage() {
             />
           </div>
           {visibilityButton && (
-            <button type="submit" className={style.button_active}>
+            <button
+              type="submit"
+              className={visibility ? style.button : style.button_active}
+            >
               Войти
             </button>
           )}
