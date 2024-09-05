@@ -61,13 +61,13 @@
 }
 
 .title_right_site p {
-  margin-top: 22px;
+  margin-top: 6px;
   font-size: 16px;
   color: gray;
 }
 
 .navigate_links {
-  margin-top: 18px;
+  margin-top: 22px;
   /* margin-left: 32px; */
   display: flex;
   flex-direction: column;

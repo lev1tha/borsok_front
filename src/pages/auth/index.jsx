@@ -11,15 +11,13 @@ export default function AuthPage() {
   const [password, setPassword] = useState("");
 
   const [visibility, setVisibility] = useState(false);
-  const [visibilityButton, setVisibilityButton] = useState(false);
+  const [buttonActive, setButtonActive] = useState(false);
 
   const handleChangeVisibility = (event) => {
     const input = event.target.value;
-    if (input) {
-      setVisibilityButton(true);
-    } else {
-      setVisibilityButton(false);
-    }
+
+    if (input) setButtonActive(true);
+    else setButtonActive(false);
   };
 
   const handleOnSendAuth = (e) => {
@@ -45,11 +43,7 @@ export default function AuthPage() {
         <div>
           <img src={Logo} alt="logotype" />
         </div>
-        <form
-          action=""
-          className={style.form_input}
-          onSubmit={handleOnSendAuth}
-        >
+        <form className={style.form_input} onSubmit={handleOnSendAuth}>
           <input
             type="text"
             placeholder="Введите ваше имя"
@@ -73,14 +67,14 @@ export default function AuthPage() {
               placeholder="Пароль"
             />
           </div>
-          {visibilityButton && (
-            <button
-              type="submit"
-              className={visibility ? style.button : style.button_active}
-            >
-              Войти
-            </button>
-          )}
+          <button
+            type="submit"
+            className={`${style.authButton} ${
+              buttonActive ? style.authButtonVisible : ""
+            }`}
+          >
+            Войти
+          </button>
         </form>
       </div>
     </div>

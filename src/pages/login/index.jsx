@@ -65,7 +65,9 @@ export default function Index() {
         </form>
         <button
           // onClick={handleSendRegistration()}
-          className={buttonActive ? style.buttonVisible : ""}
+          className={`${style.authButton} ${
+            buttonActive ? style.authButtonVisible : ""
+          }`}
         >
           Зарегистрироваться
         </button>

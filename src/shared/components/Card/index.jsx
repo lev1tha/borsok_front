@@ -17,6 +17,14 @@ const Card = () => {
           </p>
         </div>
       </div>
+      <div className={style.buttons_form}>
+        <div>
+          <span>Вес: 230гр</span>
+        </div>
+        <div>
+          <button className={style.ordered}>Добавь в каризну</button>
+        </div>
+      </div>
     </div>
   );
 };

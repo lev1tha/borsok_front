@@ -33,3 +33,30 @@
   margin-top: 6px;
   font-weight: 200;
 }
+
+.buttons_form {
+  margin-top: 20px;
+
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.buttons_form span {
+  font-size: 14px;
+  color: rgb(168, 168, 168);
+}
+
+.ordered {
+  border-radius: 6px;
+  font-size: 15px;
+  padding: 8px 6px;
+  border: none;
+  color: white;
+  background-color: #471100c0;
+}
+
+.ordered:hover {
+  background-color: transparent;
+  color: black;
+}
