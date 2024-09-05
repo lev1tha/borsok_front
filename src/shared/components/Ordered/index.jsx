@@ -5,10 +5,6 @@ import OrderedCard from "../OrderCard/index";
 export default function Index() {
   const [arrayClient, setArrayClient] = useState([]);
 
-  // TODO реализовать запросы в back а так же реализовать запросы
-  // useEffect(()=>{
-
-  // }, [setTimeout(5000)])
 
   return (
     <div className={style.ordered_container}>
