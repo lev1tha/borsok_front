@@ -19,6 +19,9 @@ const Header = () => {
           <Link to={"/акций"}>
             <span>Акций</span>
           </Link>
+          <Link to={"/vacancy-client"}>
+            <span>Вакансикй</span>
+          </Link>
         </nav>
         <div className={style.card}>
           <Link className={style.card_inner} to={"/card"}>

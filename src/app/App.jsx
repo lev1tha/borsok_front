@@ -10,6 +10,7 @@ import Cart from "../pages/cart";
 import Admin from "../pages/admin";
 import Login from "../pages/login";
 import Auth from "../pages/auth";
+import Vacancy from "../pages/vacancy";
 
 const App = () => {
   const url = window.location.href;
@@ -23,6 +24,7 @@ const App = () => {
         <Route path={"/"} element={<Home />} />
         <Route path={"/cart"} element={<Cart />} />
         <Route path={"/admin"} element={<Admin />} />
+        <Route path={"/vacancy-client"} element={<Vacancy />} />
         {/* 
           auth/login
           auth/auth
