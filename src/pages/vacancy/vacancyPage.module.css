@@ -1,0 +1,82 @@
+.vacancy_container_page {
+}
+
+.vacancy_infocommunicate {
+  padding: 20px 40px;
+  background-color: rgba(169, 169, 169, 0.1);
+  border-radius: 20px;
+  border: 0.5px dashed black;
+}
+
+.title_vacancy h1 {
+  font-weight: 300;
+  font-size: 38px;
+}
+
+.box_information {
+  display: flex;
+  gap: 80px;
+  /* align-items: center; */
+}
+
+.left_information {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title_left_site p {
+  width: 700px;
+
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.suptitle_left_site {
+  margin-top: 50px;
+}
+
+.suptitle h4 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.suptitle ul {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 14px;
+  margin-left: 34px;
+}
+
+.right_information {
+  background-color: white;
+  border-radius: 18px;
+  padding: 32px;
+  height: fit-content;
+}
+
+.title_right_site h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.title_right_site p {
+  margin-top: 22px;
+  font-size: 16px;
+  color: gray;
+}
+
+.navigate_links {
+  margin-top: 18px;
+  /* margin-left: 32px; */
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.navigate_links a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+}

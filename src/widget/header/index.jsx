@@ -20,7 +20,7 @@ const Header = () => {
             <span>Акций</span>
           </Link>
           <Link to={"/vacancy-client"}>
-            <span>Вакансий</span>
+            <span>Вакансикй</span>
           </Link>
         </nav>
         <div className={style.card}>
